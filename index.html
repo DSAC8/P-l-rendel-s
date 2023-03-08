@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pólórendelés</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5 mt-5">
+                <h1>Rendelj egyedi pólót!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 keret">
+                
+                <div id="polo">
+                    <div id=poloo><img style="margin-left: -8%;" src="assets/images/polo-zold.png" alt=""></div>
+                    
+                    <div id="ideiras"><p style="font-size: 25%; " id="felirat"></p></div>
+                    
+                    <p id="sorszam"></p>
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-5 offset-md-2 keret jobb">
+                <div class="form-group">
+                    <label>Válassz színt!</label>
+                    <select id="szin" onchange="szin()" class="form-control">
+                        <option value="asd" style="background-color: #07f707;"selected></option>
+                        <option value="2"  style="background-color: #00e1ff;"></option>
+                        <option value="3"  style="background-color: #ffa600;"></option>
+                        <option value="4"  style="background-color: #ff0000;"></option>
+                        <option value="5"  style="background-color: #585858;"></option>
+
+                    </select>
+                </div>
+                <div class="form-group mt-5">
+                    <label>Felirat</label>
+                    <input id="iras" onchange="irass()" type="text" class="form-control "value='ferike' >
+                </div>
+                <div class="form-group mt-5">
+                    <label>Szám</label>
+                    <input type="number"onchange="szam()" id="szam" class="form-control" value="19" min="1" max="99">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
